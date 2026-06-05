@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Satrio Aldiansyah</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+            min-height:100vh;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:30px;
+        }
+
+        .container{
+            width:100%;
+            max-width:1100px;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,0.15);
+            border-radius:30px;
+            overflow:hidden;
+            box-shadow:0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .hero{
+            text-align:center;
+            padding:60px 30px;
+            background:linear-gradient(
+                135deg,
+                rgba(255,215,0,0.15),
+                rgba(255,255,255,0.05)
+            );
+        }
+
+        .profile{
+            width:160px;
+            height:160px;
+            margin:auto;
+            border-radius:50%;
+            background:linear-gradient(135deg,#ffd700,#ffb703);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:60px;
+            font-weight:bold;
+            color:#111827;
+            box-shadow:0 10px 30px rgba(255,215,0,0.3);
+        }
+
+        .hero h1{
+            margin-top:25px;
+            font-size:3rem;
+            letter-spacing:1px;
+        }
+
+        .hero p{
+            margin-top:10px;
+            color:#d1d5db;
+            font-size:1.1rem;
+        }
+
+        .content{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+            padding:35px;
+        }
+
+        .box{
+            background:rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:25px;
+            transition:0.3s;
+        }
+
+        .box:hover{
+            transform:translateY(-8px);
+            border-color:#ffd700;
+        }
+
+        .box h2{
+            margin-bottom:15px;
+            color:#ffd700;
+            font-size:1.3rem;
+        }
+
+        .info{
+            margin:12px 0;
+            color:#e5e7eb;
+            line-height:1.8;
+        }
+
+        .highlight{
+            color:#ffd700;
+            font-weight:600;
+        }
+
+        .footer{
+            text-align:center;
+            padding:25px;
+            border-top:1px solid rgba(255,255,255,0.1);
+            color:#cbd5e1;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:2.2rem;
+            }
+
+            .profile{
+                width:130px;
+                height:130px;
+                font-size:50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <div class="hero">
+            <div class="profile">SA</div>
+            <h1>Satrio Aldiansyah</h1>
+            <p>Student Portfolio | SMA</p>
+        </div>
+
+        <div class="content">
+
+            <div class="box">
+                <h2>👤 Profil Pribadi</h2>
+                <div class="info">
+                    <span class="highlight">Nama:</span><br>
+                    Satrio Aldiansyah
+                </div>
+
+                <div class="info">
+                    <span class="highlight">Tempat, Tanggal Lahir:</span><br>
+                    Jakarta, 29 Mei 2009
+                </div>
+
+                <div class="info">
+                    <span class="highlight">Pendidikan:</span><br>
+                    Sekolah Menengah Atas (SMA)
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>📍 Alamat</h2>
+                <div class="info">
+                    Gg Service 1B<br>
+                    RT 01 / RW 10
+                </div>
+
+                <div class="info">
+                    Indonesia
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>🎯 Tentang Saya</h2>
+                <div class="info">
+                    Saya adalah siswa SMA yang memiliki semangat
+                    belajar tinggi, tertarik pada teknologi,
+                    desain, dan pengembangan proyek kreatif.
+                    Saya senang mempelajari hal-hal baru serta
+                    mengembangkan kemampuan di bidang digital.
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>⭐ Motto</h2>
+                <div class="info">
+                    "Terus belajar, terus berkembang,
+                    dan jadikan setiap pengalaman sebagai
+                    langkah menuju masa depan yang lebih baik."
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © 2026 | Portfolio Satrio Aldiansyah
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
